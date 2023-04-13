@@ -21,6 +21,8 @@ public class Celeb {
     @Column(name = "movie_title")
     private String movieTitle;
 
+
+
     public Celeb(){}
 
 

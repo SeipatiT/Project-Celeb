@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="ISO-8859-1">
-    <title>Student Management System</title>
+    <meta charset="UTF-8" />
+    <title>Celeb Guide</title>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous">
+
+    <h3>
+        Celeb Guide
+        <small class="text-muted">A website designed to store your celeb info... </small>
+    </h3>
+    <p class="lead">
+        other text
+    </p>
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">Student Management System</a>
+    <a class="navbar-brand" href="#">Landing page (List of Database Contents)</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -20,14 +28,15 @@
 
 
 <!-- Navbar links -->
+<!--    These help you add other tabs on the main page-->
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/celebs}">celeb Management</a>
+            <a class="nav-link" th:href="@{/celebs}">Wiki Info Tab</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" th:href="@{/celebs}">Teacher Management</a>
-        </li>
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link" th:href="@{/celebs}">Celeb Management</a>-->
+<!--        </li>-->
     </ul>
 </div>
 </nav>
@@ -36,12 +45,15 @@
 
 <div class ="container">
     <div class = "row">
-        <h1> List Celebs </h1>
+        <h1> Your Celebrity Database </h1>
     </div>
 
     <div class = "row">
         <div class = "col-lg-3">
             <a th:href = "@{/celebs/new}" class = "btn btn-primary btn-sm mb-3"> Add celeb</a>
+
+<!--            to add wiki info page-->
+<!--            <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>-->
         </div>
     </div>
     <table class = "table table-striped table-bordered">
@@ -66,8 +78,13 @@
                 <a th:href = "@{/celebs/{id}(id=${celeb.id})}"
                    class = "btn btn-danger">Delete</a>
 
+<!--                <a th:href = "@{/celebs/edit/{id}(id=${celeb.id})}"-->
+<!--                   class = "btn btn-primary">Update</a>-->
+
             </td>
         </tr>
+
+
         </tbody>
 
     </table>
