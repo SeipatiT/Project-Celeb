@@ -1,5 +1,6 @@
 package com.example.projectceleb;
 
+import com.example.projectceleb.Controller.CelebController;
 import com.example.projectceleb.Repository.CelebRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -10,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ProjectCelebApplication implements CommandLineRunner {
+//    @Autowired
+//    private CelebRepository celebRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectCelebApplication.class, args);
