@@ -9,4 +9,4 @@ Bootstrap responsive web page
 
 
 Errors
-when you upate a celeb name it does not go back to celebs index
+when you update a celeb name it does not go back to celebs index
