@@ -1,12 +1,7 @@
-In this application:
+Welcome to Project Celeb!
+This program is a website to store your favourite celeb news and updates. You simply input the celeb's name and any recent project they have created. The website then pulls other Wiki Info about your favourite celeb. Info such as awards, other media or art they have contributed to.  
 
-I used Springboot to make a web server.
-Spring
-I used Json for database
-I used Thymeleaf for my web
-Bootstrap responsive web page
-
-
-
-Errors
-when you update a celeb name it does not go back to celebs index
+Java Project.
+Used Springboot to make a web server.
+I used Thymeleaf and Bootstrap for my web page set up. 
+Wiki APi
